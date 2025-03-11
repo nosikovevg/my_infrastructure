@@ -1,0 +1,4 @@
+---
+- hosts: sss
+  roles:
+    - { role: 'hostname' }

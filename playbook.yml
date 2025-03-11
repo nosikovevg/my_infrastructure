@@ -1,0 +1,5 @@
+---
+- hosts: sss
+  roles:
+  - { role: 'addmess'}
+
