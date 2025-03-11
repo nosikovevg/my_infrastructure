@@ -1,0 +1,19 @@
+---
+- name: perenos repo
+  hosts: localhost
+  gather_facts: no
+  tasks:
+   - name: proverca
+     file:
+       path: "roles"
+       state: directory
+
+
+   - name: rasim is github
+     git:
+       repo: 'git@github.com:nosikovevg/my_ansible_roles.git'
+       dest: "roles"
+       version: main
+       force: yes
+
+# вытаскиваем роли из github
